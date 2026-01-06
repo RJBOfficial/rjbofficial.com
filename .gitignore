@@ -19,3 +19,7 @@ dist/
 # Local/manual backups
 *.bak*
 *~
+deploy.sh
+
+# Local helper scripts (do not commit)
+deploy.sh
