@@ -1,0 +1,17 @@
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Secrets
+.env
+.env.*
+!*.example
+
+# If you ever use Node tooling
+node_modules/
+dist/
