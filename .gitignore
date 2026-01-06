@@ -15,3 +15,7 @@ Thumbs.db
 # If you ever use Node tooling
 node_modules/
 dist/
+
+# Local/manual backups
+*.bak*
+*~

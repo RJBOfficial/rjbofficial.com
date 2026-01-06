@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RJB Official</title>
+  <meta name="description" content="Official site for RJB. Updates, projects, and links." />
+
+  <!-- Icons (you already uploaded these) -->
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+
+  <!-- PWA niceties -->
+  <link rel="manifest" href="/site.webmanifest?v=2">
+  <meta name="theme-color" content="#0b0f19">
+
+  <link rel="stylesheet" href="/assets/style.css?v=2" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>RJB Official</span>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
+        <a href="https://mc.rjbofficial.com/">Minecraft</a>
+        <a href="https://panel.rjbofficial.com/">Panel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-card">
+          <div class="kicker">Welcome</div>
+          <h1 class="h1">A clean, fast, mobile-first site.</h1>
+          <p class="sub">
+            This is the main hub for RJB Official. Keep it lightweight, secure, and easy to maintain.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="https://mc.rjbofficial.com/">Minecraft site</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <aside class="card section">
+          <h2 class="h2">Quick links</h2>
+          <p class="p">Shortcuts for common destinations.</p>
+          <ul class="list">
+            <li class="li"><strong>Panel:</strong> <a href="https://panel.rjbofficial.com/">panel.rjbofficial.com</a></li>
+            <li class="li"><strong>Minecraft:</strong> <a href="https://mc.rjbofficial.com/">mc.rjbofficial.com</a></li>
+            <li class="li"><strong>Status:</strong> <span class="p">Add a status page link later</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+      <div class="card section">
+        <h2 class="h2">Projects</h2>
+        <p class="p">Show off what you’re building. Add 2–4 key projects here with links.</p>
+      </div>
+      <div class="card section">
+        <h2 class="h2">Performance</h2>
+        <p class="p">Static-first. Minimal JS. Great for mobile + SEO.</p>
+      </div>
+      <div class="card section">
+        <h2 class="h2">Security</h2>
+        <p class="p">Fronted by Nginx, served by Apache, protected by TLS and sane headers.</p>
+      </div>
+    </section>
+
+    <section id="updates" class="card section" style="margin-top:14px;">
+      <h2 class="h2">Updates</h2>
+      <p class="p">Put your latest news here. Keep it short and clear.</p>
+      <ul class="list">
+        <li class="li"><strong>Update #1:</strong> Deployed new site layout + icons.</li>
+        <li class="li"><strong>Update #2:</strong> Add real content and links next.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card section" style="margin-top:14px;">
+      <h2 class="h2">Contact</h2>
+      <p class="p">Add your preferred contact methods here.</p>
+      <ul class="list">
+        <li class="li"><strong>Email:</strong> <span class="p">you@example.com</span></li>
+        <li class="li"><strong>Social:</strong> <span class="p">Add links (X/Instagram/YouTube/Discord)</span></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div class="container" style="padding:0">
+        © <span id="year"></span> RJB Official · Built for mobile · Served securely
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
