@@ -68,21 +68,102 @@
       </div>
     </section>
 
-    <section id="projects" class="grid">
-      <div class="card section">
-        <h2 class="h2">Projects</h2>
-        <p class="p">Show off what you’re building. Add 2–4 key projects here with links.</p>
-      </div>
-      <div class="card section">
-        <h2 class="h2">Performance</h2>
-        <p class="p">Static-first. Minimal JS. Great for mobile + SEO.</p>
-      </div>
-      <div class="card section">
-        <h2 class="h2">Security</h2>
-        <p class="p">Fronted by Nginx, served by Apache, protected by TLS and sane headers.</p>
-      </div>
-    </section>
+    <section id="projects" class="card section" style="margin-top:14px;">
+  <div class="section-title">
+    <h2 class="h2">Projects</h2>
+    <span class="muted">A few things I’m building and maintaining.</span>
+  </div>
 
+  <div class="project-grid">
+    <!-- Project 1 -->
+    <article class="card section project">
+      <div class="meta">
+        <div>
+          <h3 class="h2" style="margin:0;">rjbofficial.com</h3>
+          <p class="p muted">Static portfolio site with a clean, production VPS workflow.</p>
+        </div>
+        <span class="badge live">Live</span>
+      </div>
+
+      <div class="chips" aria-label="Tech stack">
+        <span class="chip"><span class="dot" aria-hidden="true"></span>HTML</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>CSS</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Nginx</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Apache</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>GitHub Deploy</span>
+      </div>
+
+      <div class="links">
+        <a class="btn primary" href="/">Open site</a>
+        <a class="btn" href="/pages/updates.html">Recent updates</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="card section project">
+      <div class="meta">
+        <div>
+          <h3 class="h2" style="margin:0;">mc.rjbofficial.com</h3>
+          <p class="p muted">Minecraft hub + server-related content and experiments.</p>
+        </div>
+        <span class="badge wip">WIP</span>
+      </div>
+
+      <div class="chips" aria-label="Tech stack">
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Web</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Linux VPS</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Reverse Proxy</span>
+      </div>
+
+      <div class="links">
+        <a class="btn primary" target="_blank" rel="noopener" href="https://mc.rjbofficial.com/">Open site</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://panel.rjbofficial.com/">Panel</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="card section project">
+      <div class="meta">
+        <div>
+          <h3 class="h2" style="margin:0;">Status page</h3>
+          <p class="p muted">Public uptime + incident updates for services and sites.</p>
+        </div>
+        <span class="badge planned">Planned</span>
+      </div>
+
+      <div class="chips" aria-label="Tech stack">
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Uptime</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Monitoring</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Alerts</span>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="/pages/contact.html">Suggest a feature</a>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="card section project">
+      <div class="meta">
+        <div>
+          <h3 class="h2" style="margin:0;">Automation / tooling</h3>
+          <p class="p muted">Beginner-safe scripts for deploy, checks, and repeatable ops.</p>
+        </div>
+        <span class="badge wip">WIP</span>
+      </div>
+
+      <div class="chips" aria-label="Tech stack">
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Bash</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>SSH</span>
+        <span class="chip"><span class="dot" aria-hidden="true"></span>curl checks</span>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="/pages/updates.html#updates">See progress</a>
+      </div>
+    </article>
+  </div>
+</section>
     <section id="updates" class="card section" style="margin-top:14px;">
       <h2 class="h2">Updates</h2>
       <p class="p">Put your latest news here. Keep it short and clear.</p>

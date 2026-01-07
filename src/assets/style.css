@@ -150,6 +150,147 @@ img{max-width:100%; display:block}
   }
 }
 
+/* ===== Option A components ===== */
+
+.section-title{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  margin: 8px 0 10px;
+}
+
+.section-title .h2{
+  margin: 0;
+}
+
+.muted{
+  opacity: 0.78;
+}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top: 10px;
+}
+
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+}
+
+.chip .dot{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background: rgba(147,197,253,0.9);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  opacity: 0.95;
+}
+
+.badge.live{ background: rgba(34,197,94,0.10); border-color: rgba(34,197,94,0.25); }
+.badge.wip{ background: rgba(59,130,246,0.10); border-color: rgba(59,130,246,0.25); }
+.badge.planned{ background: rgba(168,85,247,0.10); border-color: rgba(168,85,247,0.25); }
+
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.project{
+  grid-column: span 6;
+}
+
+@media (max-width: 900px){
+  .project{ grid-column: span 12; }
+}
+
+.project .meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 10px;
+}
+
+.project .meta .p{
+  margin: 0;
+}
+
+.project .links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top: 12px;
+}
+
+/* Updates timeline */
+.timeline{
+  margin-top: 12px;
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.update{
+  display:grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
+  align-items:start;
+}
+
+@media (max-width: 720px){
+  .update{ grid-template-columns: 1fr; }
+}
+
+.update .when{
+  font-size: 0.95rem;
+  opacity: 0.80;
+  padding-top: 6px;
+}
+
+.update .body .h3{
+  margin: 0 0 6px 0;
+}
+
+.update .body .p{
+  margin: 0;
+}
+
+/* Contact cards */
+.contact-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.contact-card{
+  grid-column: span 6;
+}
+
+@media (max-width: 900px){
+  .contact-card{ grid-column: span 12; }
+}
+
 .footer{
   margin-top:22px;
   padding:18px 0 26px;
