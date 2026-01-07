@@ -109,6 +109,47 @@ img{max-width:100%; display:block}
   border-radius: 14px;
   background: rgba(255,255,255,.03);
 }
+/* Title banner (SVG background image + PNG logo overlay) */
+.title-banner{
+  position: relative;
+  margin: 0 0 14px 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.title-banner-img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Logo overlay: always renders (unlike external <image> inside SVG) */
+.title-banner-logo{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  border-radius: 16px;
+  padding: 8px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(6px);
+}
+
+/* Make it scale nicely on small screens */
+@media (max-width: 520px){
+  .title-banner-logo{
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    padding: 7px;
+  }
+}
+
 .footer{
   margin-top:22px;
   padding:18px 0 26px;
