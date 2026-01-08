@@ -46,10 +46,44 @@ img{max-width:100%; display:block}
   display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;
 }
 .brand-badge{
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  background:
+    url("/assets/rjb-logo-96.png") center/22px 22px no-repeat,
+    linear-gradient(135deg, rgba(110,231,255,.25), rgba(167,139,250,.25));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.brand-name{font-weight:800; letter-spacing:.2px}
+
+.page-pill{
+  margin-left:6px;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  opacity:.92;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(17,24,39,.35);
+}
+
+.brand-badge{
   width:34px; height:34px; border-radius:12px;
-  background: linear-gradient(135deg, rgba(110,231,255,.9), rgba(167,139,250,.9));
+  background:
+    url("/assets/rjb-logo-96.png") center/22px 22px no-repeat,
+    linear-gradient(135deg, rgba(110,231,255,.9), rgba(167,139,250,.9));
   box-shadow: var(--shadow);
 }
+
+/* fallback if image ever fails: shows tiny “RJB” vibe */
+.brand-badge::after{
+  content:"";
+  /* keep empty so we don't clutter if image loads */
+}
+
+
 .navlinks{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
 .navlinks a{opacity:.9}
 .navlinks a:hover{opacity:1}
