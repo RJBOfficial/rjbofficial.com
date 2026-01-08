@@ -9,6 +9,9 @@
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius:18px;
   --max:1100px;
+  --rjb-blue: rgba(56,189,248,0.55);
+  --rjb-orange: rgba(249,115,22,0.55);
+  --rjb-ink: rgba(0,0,0,0.55);
 }
 
 *{box-sizing:border-box}
