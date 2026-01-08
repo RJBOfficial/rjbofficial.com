@@ -208,6 +208,28 @@ img{max-width:100%; display:block}
 .badge.wip{ background: rgba(59,130,246,0.10); border-color: rgba(59,130,246,0.25); }
 .badge.planned{ background: rgba(168,85,247,0.10); border-color: rgba(168,85,247,0.25); }
 
+
+/* Active nav link */
+.navlinks a.active,
+.navlinks a[aria-current="page"]{
+  position: relative;
+  opacity: 1;
+}
+
+.navlinks a.active::after,
+.navlinks a[aria-current="page"]::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(147,197,253,0.85);
+}
+
+
+
 .project-grid{
   display:grid;
   grid-template-columns: repeat(12, 1fr);
