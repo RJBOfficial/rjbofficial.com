@@ -266,28 +266,31 @@ img{max-width:100%; display:block}
 
 /* Per-page banner art */
 .title-banner--projects .title-banner-art{
-  background:
+  --_page-bg:
     radial-gradient(circle at 18% 30%, rgba(124,58,237,0.55), transparent 55%),
     radial-gradient(circle at 82% 22%, rgba(34,211,238,0.45), transparent 55%),
     radial-gradient(circle at 76% 82%, rgba(99,102,241,0.35), transparent 60%),
     linear-gradient(135deg, #0b0f19, #101a33);
 }
 
+
 .title-banner--updates .title-banner-art{
-  background:
+  --_page-bg:
     radial-gradient(circle at 20% 25%, rgba(34,197,94,0.45), transparent 55%),
     radial-gradient(circle at 80% 30%, rgba(6,182,212,0.40), transparent 55%),
     radial-gradient(circle at 75% 85%, rgba(16,185,129,0.25), transparent 60%),
     linear-gradient(135deg, #0b0f19, #0f2a2a);
 }
 
+
 .title-banner--contact .title-banner-art{
-  background:
+  --_page-bg:
     radial-gradient(circle at 22% 78%, rgba(251,113,133,0.35), transparent 60%),
     radial-gradient(circle at 82% 26%, rgba(167,139,250,0.45), transparent 55%),
     radial-gradient(circle at 72% 80%, rgba(236,72,153,0.22), transparent 60%),
     linear-gradient(135deg, #0b0f19, #2a1634);
 }
+
 
 /* page-specific accent patterns (subtle) */
 .title-banner--projects .title-banner-art{
@@ -324,6 +327,14 @@ img{max-width:100%; display:block}
     radial-gradient(circle at 82% 26%, rgba(167,139,250,0.45), transparent 55%),
     radial-gradient(circle at 72% 80%, rgba(236,72,153,0.22), transparent 60%),
     linear-gradient(135deg, #0b0f19, #2a1634);
+}
+
+/* brand accent wash (subtle, across all banners) */
+.title-banner .title-banner-art{
+  background-image:
+    radial-gradient(circle at 12% 20%, var(--rjb-orange), transparent 48%),
+    radial-gradient(circle at 82% 25%, var(--rjb-blue), transparent 52%),
+    var(--_page-bg, linear-gradient(135deg, #0b0f19, #101a33));
 }
 
 
